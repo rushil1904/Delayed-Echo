@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: telegram-scheduler-bot
+    env: python
+    buildCommand: pip install -r render_requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --reuse-port main:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.2
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: DATABASE_URL
+        sync: false
