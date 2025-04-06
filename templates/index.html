@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Scheduler Bot</title>
+    <link rel="stylesheet" href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h1 class="text-center mb-0">
+                            <i class="fab fa-telegram me-2"></i>Telegram Message Scheduler Bot
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-clock fa-4x text-info mb-3"></i>
+                            <h2>Your Personal Message Reminder</h2>
+                            <p class="lead">Schedule messages to be sent back to you at the perfect time.</p>
+                        </div>
+
+                        <h3 class="border-bottom pb-2 mb-3">
+                            <i class="fas fa-list-ul me-2"></i>Features
+                        </h3>
+                        <ul class="list-group mb-4">
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Schedule messages to be sent back to you
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Forward existing messages to schedule them
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Flexible time specification (5m, 2h, 1d, etc.)
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                List all your scheduled messages
+                            </li>
+                        </ul>
+
+                        <h3 class="border-bottom pb-2 mb-3">
+                            <i class="fas fa-book me-2"></i>How to Use
+                        </h3>
+                        <ol class="list-group list-group-numbered mb-4">
+                            <li class="list-group-item">
+                                Start a conversation with the bot by searching for it on Telegram
+                            </li>
+                            <li class="list-group-item">
+                                Send <code>/start</code> to begin and see available commands
+                            </li>
+                            <li class="list-group-item">
+                                Forward any message or send a new one to the bot
+                            </li>
+                            <li class="list-group-item">
+                                Specify when you want to receive the message (e.g., "2h" for 2 hours)
+                            </li>
+                            <li class="list-group-item">
+                                The bot will confirm your scheduling and deliver the message at the specified time
+                            </li>
+                        </ol>
+
+                        <h3 class="border-bottom pb-2 mb-3">
+                            <i class="fas fa-code me-2"></i>Commands
+                        </h3>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Command</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>/start</code></td>
+                                        <td>Start the bot and see the welcome message</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/help</code></td>
+                                        <td>Display help information and usage instructions</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/schedule</code></td>
+                                        <td>Start the process of scheduling a new message</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/list</code></td>
+                                        <td>Show all your currently scheduled messages</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>/cancel</code></td>
+                                        <td>Cancel the current scheduling operation</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="alert alert-info mt-4" role="alert">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <strong>Time format examples:</strong> 5m (5 minutes), 2h (2 hours), 1d (1 day), 30s (30 seconds), 3h 30m (3 hours and 30 minutes)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4 text-muted">
+                    <p>The bot is currently running. Open Telegram to start using it!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
